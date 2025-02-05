@@ -60,7 +60,7 @@ h1 {
     color: var(--White);
     padding: 7px;
 }
-p {
+p, button {
     font-family: 'Inter';
     font-size: 1rem;
     color: var(--White);
@@ -81,19 +81,15 @@ p {
 
 button {
     background-color: var(--Grey700);
-    padding: 12px;
+    padding: 15px;
     margin: 15px 0 0 0;
     border-radius: 7px;
     border: none;
-}
-button p {
     font-weight: 700;
 }
 button:hover, button:focus {
     background-color: var(--Green);
     cursor: pointer;
-}
-button:hover p, button:focus p {
     color: var(--Grey900);
 }
 
