@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Green:   hsl(75, 94%, 57%);
+    --White:   hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+
+html {
+    font-size: 14px;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    font-weight: 400 600 700;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: min(90%, 375px);
+    background-color: var(--Grey900);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+    border-radius: 10px;
+    background-color: var(--Grey800);
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.header {
+    margin: 15px 0;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--White);
+    padding: 7px;
+}
+p {
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: var(--White);
+    font-weight: 400;
+}
+
+#location {
+    color: var(--Green);
+    font-weight: 600;
+}
+#description {
+    padding: 10px 24px;
+}
+@media screen and (max-width: 480px){
+    #description {padding: 10px;}
+    .card {padding: 25px;}
+}
+
+button {
+    background-color: var(--Grey700);
+    padding: 12px;
+    margin: 15px 0 0 0;
+    border-radius: 7px;
+    border: none;
+}
+button p {
+    font-weight: 700;
+}
+button:hover, button:focus {
+    background-color: var(--Green);
+    cursor: pointer;
+}
+button:hover p, button:focus p {
+    color: var(--Grey900);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
